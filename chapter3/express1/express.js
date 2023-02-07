@@ -10,4 +10,12 @@ app.use('/user/:id', (req, res) => {
     res.send('user 접속');
 });
 
+app.get('/user/:id', (req, res) => {
+    res.send('user 접속');
+});
+
+app.post('user', (req, res) => {
+    res.send('user post')
+})
+
 app.listen(8080);
